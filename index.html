@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+
+<!-- Start Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+<!-- End Fonts -->
+ <!-- Start Icons -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ <!-- End Icons -->
+  <title>Product list with cart</title>
+</head>
+<body>
+
+<!-- Start Dessert -->
+ <section class="dessert">
+  <h1 class="sec-title"> Dessert </h1>
+  <div class="container">
+ 
+
+  </div>
+ </section>
+<!-- End Dessert -->
+
+
+<!-- Start Cart -->
+<section class="cart">
+  <h2 class="sec-title">Your Cart (<span>0</span>)</h2>
+  <div class="container">
+  <div class="warn">
+    <div class="img">
+      <img src="assets/images/illustration-empty-cart.svg" alt="">
+    </div>
+    <p> Your added items will appear here</p>
+  </div>
+
+  </div>
+
+
+  <div class="total">
+    <p>Total</p>
+    <b>$0</b>
+  </div>
+
+  <button onclick="confirm()" class="btn">Confirm Order</button>
+</section>
+<!-- End Cart -->
+
+
+<!-- Start Confirmed -->
+ <div class="confirmed">
+  <div class="card">
+    <div class="icon">
+      <img src="assets/images/icon-order-confirmed.svg" alt="">
+    </div>
+    <div class="message">
+      <h3 class="section-title">Order Confirmed</h3>
+      <span>We Hope You Enjoy Your Food!</span>
+    </div>
+    <button onclick="neworder()">Start New Order</button>
+  </div>
+ </div>
+<!-- End Confirmed -->
+
+  <script src="main.js"></script>
+</body>
+</html>
